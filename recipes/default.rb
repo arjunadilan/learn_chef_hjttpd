@@ -10,6 +10,10 @@ service 'httpd' do
 	action [:enable, :start]
 end
 
+package 'vim' do
+  action :install
+end
+
 group 'web_admin'
 
 user 'web_admin' do
